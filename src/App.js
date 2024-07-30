@@ -1,10 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import { useDispatch, useSelector } from 'react-redux';
+import {addMoney} from './redux/slices/balance.slice'
 
 function App() {
+  const dispatch=useDispatch()
+  const amount=useSelector((state)=>state.balance.amount);
   return (
     <div className="App">
-      <h1>Hello, how are you?</h1>q
+       balance:{amount} 
+      <button onClick={()=>dispatch(addMoney(10))}>add</button>
     </div>
   );
 }
