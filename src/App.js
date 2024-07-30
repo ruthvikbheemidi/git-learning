@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
        balance:{amount} 
-      <button onClick={()=>dispatch(addMoney(10))}>add</button>
+      
     </div>
   );
 }
