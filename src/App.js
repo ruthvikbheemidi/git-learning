@@ -8,7 +8,7 @@ function App() {
   const amount=useSelector((state)=>state.balance.amount);
   return (
     <div className="App">
-       balance:{amount} 
+        
       
     </div>
   );
